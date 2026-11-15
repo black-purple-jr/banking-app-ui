@@ -18,7 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import me.bpxdevjr.banking_app_ui.data.BottomNavigation
 
 
-val items: List<BottomNavigation> = listOf(
+val menuItems: List<BottomNavigation> = listOf(
     BottomNavigation("Home", Icons.Rounded.Home),
     BottomNavigation("Wallet", Icons.Rounded.Wallet),
     BottomNavigation("Notifications", Icons.Rounded.Notifications),
@@ -30,7 +30,7 @@ val items: List<BottomNavigation> = listOf(
 fun BottomNavigationBar () {
     NavigationBar {
         Row (Modifier.background(MaterialTheme.colorScheme.inverseOnSurface)) {
-            items.forEachIndexed { index, item ->
+            menuItems.forEachIndexed { index, item ->
                 NavigationBarItem(
                     selected = index == 0,
                     onClick = {  },
