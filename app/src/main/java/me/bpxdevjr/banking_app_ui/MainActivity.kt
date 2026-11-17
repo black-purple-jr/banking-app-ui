@@ -22,6 +22,7 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import me.bpxdevjr.banking_app_ui.sections.BottomNavigationBar
 import me.bpxdevjr.banking_app_ui.sections.BalanceSection
 import me.bpxdevjr.banking_app_ui.sections.CardSection
+import me.bpxdevjr.banking_app_ui.sections.CurrencySection
 import me.bpxdevjr.banking_app_ui.sections.FinanceSection
 import me.bpxdevjr.banking_app_ui.ui.theme.BankingAppUITheme
 
@@ -58,6 +59,8 @@ fun HomeScreen(){
             CardSection()
             Spacer(modifier = Modifier.height(16.dp))
             FinanceSection()
+            Spacer(modifier = Modifier.height(16.dp))
+            CurrencySection()
         }
     }
 }
