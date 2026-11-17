@@ -22,6 +22,7 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import me.bpxdevjr.banking_app_ui.sections.BottomNavigationBar
 import me.bpxdevjr.banking_app_ui.sections.BalanceSection
 import me.bpxdevjr.banking_app_ui.sections.CardSection
+import me.bpxdevjr.banking_app_ui.sections.FinanceSection
 import me.bpxdevjr.banking_app_ui.ui.theme.BankingAppUITheme
 
 class MainActivity : ComponentActivity() {
@@ -53,9 +54,10 @@ fun HomeScreen(){
     Scaffold(bottomBar = { BottomNavigationBar() }) { padding ->
         Column (modifier = Modifier.fillMaxSize().padding(padding)) {
             BalanceSection()
+            Spacer(modifier = Modifier.height(10.dp))
             CardSection()
             Spacer(modifier = Modifier.height(16.dp))
-
+            FinanceSection()
         }
     }
 }
